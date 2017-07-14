@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="panes" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1060.0" prefWidth="1900.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gpatable.FXMLDocumentController">
+    <children>
+      <JFXHamburger fx:id="ham" layoutX="14.0" layoutY="28.0" />
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="240.0" layoutY="56.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="786.0" prefWidth="250.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <Glow />
+         </effect></JFXDrawer>
+      <AnchorPane fx:id="tablepane" layoutX="249.0" layoutY="56.0" prefHeight="986.0" prefWidth="1300.0" style="-fx-border-color: #000000;" />
+    </children>
+</AnchorPane>

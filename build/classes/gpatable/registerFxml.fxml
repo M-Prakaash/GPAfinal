@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pon" prefHeight="1060.0" prefWidth="1880.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gpatable.RegisterFxmlController">
+   <children>
+      <ImageView fx:id="img" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ig.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="pane2" layoutX="708.0" layoutY="158.0" prefHeight="808.0" prefWidth="527.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <JFXButton fx:id="submit" buttonType="RAISED" layoutX="192.0" layoutY="703.0" onAction="#onsubmit" prefHeight="52.0" prefWidth="126.0" ripplerFill="#ff000000" style="-fx-background-color: ;" styleClass="button2" stylesheets="@style.css" text="signup" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="usname" layoutX="149.0" layoutY="499.0" prefHeight="52.0" prefWidth="212.0" promptText="uname / e - mail" stylesheets="@style.css" unFocusColor="#4d4d4d00">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="button1" />
+               </styleClass>
+            </JFXTextField>
+            <JFXTextField fx:id="psword" layoutX="149.0" layoutY="586.0" prefHeight="52.0" prefWidth="212.0" promptText="password" stylesheets="@style.css" unFocusColor="#4d4d4d00">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="button1" />
+               </styleClass>
+            </JFXTextField>
+            <JFXTextField id="uname" fx:id="first" layoutX="149.0" layoutY="208.0" prefHeight="52.0" prefWidth="212.0" promptText="Name" stylesheets="@style.css" unFocusColor="#4d4d4d00">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="button1" />
+               </styleClass>
+            </JFXTextField>
+            <JFXComboBox fx:id="desig" focusColor="#405aa800" layoutX="146.0" layoutY="408.0" prefHeight="38.0" prefWidth="218.0" promptText="Desingnation" stylesheets="@style.css" unFocusColor="#4d4d4d00" value="HOD">
+               <styleClass>
+                  <String fx:value="text2" />
+                  <String fx:value="button1" />
+               </styleClass>
+            </JFXComboBox>
+            <JFXTextField fx:id="initial" layoutX="149.0" layoutY="304.0" prefHeight="52.0" prefWidth="212.0" promptText="Initial" stylesheets="@style.css" unFocusColor="#4d4d4d00">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="button1" />
+               </styleClass>
+            </JFXTextField>
+            <ImageView fitHeight="150.0" fitWidth="179.0" layoutX="176.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@register.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

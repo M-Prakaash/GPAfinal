@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="scndanchorpane" prefHeight="1000.0" prefWidth="1894.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gpatable.SecondsemController">
+   <children>
+      <TableView fx:id="scndsem" layoutX="14.0" layoutY="156.0" prefHeight="568.0" prefWidth="1811.0" stylesheets="@style.css">
+        <columns>
+          <TableColumn fx:id="colreg" prefWidth="180.0" styleClass="button" text="Register" />
+          <TableColumn fx:id="colname" minWidth="9.0" prefWidth="180.0" styleClass="button" text="Name" />
+            <TableColumn fx:id="subone" prefWidth="120.0" styleClass="button" text="CS6201" />
+            <TableColumn fx:id="subject2" prefWidth="120.0" styleClass="button" text="CS6202" />
+            <TableColumn fx:id="subjectthree" prefWidth="120.0" styleClass="button" text="CY6251" />
+            <TableColumn fx:id="subjectfour" prefWidth="120.0" styleClass="button" text="GE6262" />
+            <TableColumn fx:id="subjectfive" prefWidth="120.0" styleClass="button" text="HS6251" />
+            <TableColumn fx:id="subjectsix" prefWidth="120.0" styleClass="button" text="IT6211" />
+            <TableColumn fx:id="subjectsvn" prefWidth="120.0" styleClass="button" text="IT6212" />
+            <TableColumn fx:id="subjecteight" prefWidth="120.0" styleClass="button" text="MA6251" />
+            <TableColumn fx:id="subjectnine" prefWidth="120.0" styleClass="button" text="PH6251" />
+            <TableColumn fx:id="total" prefWidth="176.0" styleClass="button" text="TOTAL_POINTS" />
+            <TableColumn fx:id="credits" prefWidth="103.0" styleClass="button" text="Credits" />
+            <TableColumn fx:id="gpa" prefWidth="81.0" styleClass="button" text="GPA" />
+            <TableColumn fx:id="arrears" prefWidth="120.0" styleClass="button" text="Arrears" />
+        </columns>
+      </TableView>
+      <JFXButton id="styles" fx:id="scndsems" buttonType="RAISED" layoutX="517.0" layoutY="73.0" onAction="#loadfinal" prefHeight="47.0" prefWidth="89.0" ripplerFill="#ff00cf" style="-fx-background-color: #ff0000;" stylesheets="@style.css" text="Load" textFill="WHITE" />
+      <JFXTextField fx:id="filterField" focusColor="#405aa800" labelFloat="true" layoutX="1011.0" layoutY="80.0" prefHeight="47.0" prefWidth="171.0" promptText="Filter" style="-fx-background-color: #ffffff;" styleClass="button1" stylesheets="@style.css" unFocusColor="#ff000000" />
+      <ScrollBar fx:id="scroll" layoutX="51.0" layoutY="724.0" />
+   </children>
+</AnchorPane>
