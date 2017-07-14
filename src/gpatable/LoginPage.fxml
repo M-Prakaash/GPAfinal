@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.validation.RequiredFieldValidator?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="AnchorPane" fx:id="logpane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1060.0" prefWidth="1911.0" styleClass="test" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gpatable.LoginPageController">
+   <children>
+      <AnchorPane fx:id="bgpane" prefHeight="1060.0" prefWidth="1911.0" />
+      <AnchorPane id="panes" fx:id="panesss" layoutX="1289.0" layoutY="163.0" prefHeight="734.0" prefWidth="513.0" style="-fx-background-color: #ffffff;" styleClass="button" stylesheets="@style.css">
+         <children>
+            <Label fx:id="lable" layoutX="138.0" layoutY="367.0" styleClass="text" stylesheets="@style.css" textFill="RED" />
+            <RequiredFieldValidator fx:id="requiredField2" />
+            <JFXButton id="login" fx:id="btn" buttonType="RAISED" layoutX="347.0" layoutY="584.0" onAction="#start" prefHeight="42.0" prefWidth="106.0" ripplerFill="#ffffff00" styleClass="button2" stylesheets="@style.css" text="Login" textFill="WHITE" />
+            <JFXTextField fx:id="uname" focusColor="#405aa800" layoutX="138.0" layoutY="305.0" prefHeight="42.0" prefWidth="242.0" promptText="UserName*" style="-fx-background-radius: 30;" stylesheets="@style.css" unFocusColor="#ffffff00">
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="button1" />
+               </styleClass>
+            </JFXTextField>
+            <JFXButton id="signup" fx:id="signup" buttonType="RAISED" layoutX="74.0" layoutY="584.0" onAction="#registers" prefHeight="42.0" prefWidth="106.0" ripplerFill="WHITE" styleClass="buttonss" stylesheets="@style.css" text="Signup" textFill="WHITE" />
+            <JFXTextField fx:id="pass" focusColor="#405aa800" layoutX="138.0" layoutY="416.0" prefHeight="42.0" prefWidth="252.0" promptText="Password*" stylesheets="@style.css" unFocusColor="#4d4d4d00">
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="button1" />
+               </styleClass>
+            </JFXTextField>
+            <ImageView fx:id="img" fitHeight="181.0" fitWidth="215.0" layoutX="166.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@student.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lable2" layoutX="138.0" layoutY="476.0" prefHeight="35.0" prefWidth="292.0" styleClass="text" stylesheets="@style.css" textFill="RED" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="200.0" layoutX="159.0" layoutY="72.0" stroke="#9c27b0" strokeType="INSIDE" strokeWidth="2.0" width="200.0" />
+            <Label fx:id="lbl3" layoutX="222.0" layoutY="673.0" styleClass="text" stylesheets="@style.css" />
+            
+         </children>
+         
+         
+      </AnchorPane>
+   </children>
+</AnchorPane>
